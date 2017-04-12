@@ -1,5 +1,6 @@
 
-var i = 0;
-i = 5;
+function helloWorld(message){
+	console.log("Hello World! Here's a message: " + message);
+}
 
-console.log("Value of i: " + i);
+helloWorld('hope lgtm.com finds this alert', 'some extra trailing argument that should be flagged up');
