@@ -6,9 +6,9 @@ else:
     # executed because the loop does not have a 'break'
     print "The loop has ended!"
 
-for i in range(0,10):
+for i in range(0,10): # lgtm [py/redundant-else]
     print "Hello world: " + str(i)
 else:
     # This is a useless 'else' branch, but the alert should be
     # suppressed by lgtm.com
-    print "The loop has ended!" # lgtm [py/redundant-else]
+    print "The loop has ended!"
